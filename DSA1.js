@@ -1,29 +1,29 @@
 var containsDuplicate = function(nums) {
     
+    var count = 0;
     let flag = false;
-    nums.forEach((item)=>{
-        var x = item;
-        nums.forEach((item2)=>{
-            var y = item2;
+        for(let i=0;i<nums.length;i++){
+        var x = nums[i];
+        count = 0;
+        for(let j=0;j<nums.length;j++){
+            var y = nums[j];
             if (x===y)
                 {
-                    flag = true;
+                    count++;
+                    if (count >= 2)
+                    {
+                        flag = true;
+                    }
+                }
+                else{
                 }
             
-        })
-        
-    })
-    
-    if (flag == false)
-        {
-            return true;
         }
-    else {
-        return false;
+        
     }
     
+    return flag;
+    
 };
-console.log('hello world');
-
-var nums = [1,2,3,1]
+var nums = [2,7,4,1,9]
 console.log(containsDuplicate(nums));
