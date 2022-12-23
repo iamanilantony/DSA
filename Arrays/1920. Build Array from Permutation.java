@@ -4,9 +4,6 @@ package Arrays;
 
 // A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
 
- 
-
-// Example 1:
 
 // Input: nums = [0,2,1,5,3,4]
 // Output: [0,1,2,4,5,3]
