@@ -10,7 +10,6 @@ public class kids_with_the_greatest_number_of_candies {
         int extracandies = 3;
         List<Boolean> res = kidsWithCandies(candies, extracandies);
         System.out.println(res);
-        // boolean[]
     }
     public static List<Boolean> kidsWithCandies(int[] candies, int extracandies){
         List<Boolean> result = new ArrayList<Boolean>(candies.length);
