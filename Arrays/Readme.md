@@ -1,4 +1,4 @@
-## Submit the following on your Leetcode profile itself
+## Submit the following on your Leetcode profile itself.
 
 ### Easy
 1. [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
