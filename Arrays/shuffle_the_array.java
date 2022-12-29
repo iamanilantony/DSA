@@ -13,11 +13,13 @@ public class shuffle_the_array {
     }
 
     public static int[] shuffle(int[] nums, int n) {
-        int[] result = new int[2*n];
-        for(int i= 0; i < n ; i++){
-            result[2 * i] = nums[i];
-            result[2 * i+1] = nums[i + n];
+        // int[] result = new int[nums.length];
+        int[] temp = new int[nums.length];
+        int j =0;
+        for(int i =0; i<n; i++){
+            temp[j++] = nums[i];
+            temp[j+1] = nums[i+n];
         }
-        return result;
+        return temp; 
     }
 }
