@@ -14,11 +14,19 @@ public class kids_with_the_greatest_number_of_candies {
     public static List<Boolean> kidsWithCandies(int[] candies, int extracandies){
         List<Boolean> result = new ArrayList<Boolean>(candies.length);
         int max = 0;
-        for(int i: candies) {
-            if(i > max) max = i;
+        for(int i = 0; i<candies.length; i++){
+            if(candies[i]>max){
+                max = candies[i];
+            }
         }
-        for(int i=0; i< candies.length; i++){
-            result.add(candies[i] + extracandies >= max);
+        System.out.println(max);
+        for(int i = 0; i<candies.length; i++){
+            if (candies[i] + extracandies >= max){
+                result.add(true) ;
+            }
+            else{
+                result.add(false); 
+            } 
         }
         return result;
     } 
