@@ -10,8 +10,6 @@ public class reverse_an_array {
     }
     public static int[] createReversedArray(int[] nums, int n){
         n = n % nums.length;
-
-
         
     }
 }
