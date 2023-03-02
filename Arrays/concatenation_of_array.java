@@ -11,12 +11,11 @@ public class concatenation_of_array {
         System.out.println(Arrays.toString(res)); 
     }
     static int[] getConcatenation(int[] nums) {
-        int n = nums.length;
-        int[] ans = new int[n *2];
-        for(int i = 0; i<n ; i++){
-            ans[i] = nums[i];
-            ans[i+n] = nums[i];
+        int[] result = new int[nums.length * 2];
+        for(int i=0;i<nums.length;i++){
+            result[i] = nums[i];
+            result[nums.length+i] = nums[i];
         }
-        return ans;
+        return result;
     }
 }
