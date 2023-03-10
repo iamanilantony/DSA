@@ -1,23 +1,9 @@
-// A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
-
-// Input: nums = [0,2,1,5,3,4]
-// Output: [0,1,2,4,5,3]
-// Explanation: The array ans is built as follows: 
-// ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
-//     = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
-//     = [0,1,2,4,5,3]
-
-// class solution {
-//     public int[] buildArray(int[] nums) {
-//         int length = nums.length;
-//         for (int i=0; i<length; i++){
-//             nums[i] = (nums[nums[i]] % length) * length + nums[i];
-//             //the purpose of adding nums[i] is to get the reminder when finding the modulus
-//         }
-//         for (int i=0; i < length; i++){
-//             nums[i] /= length;
-//         }
-//         return nums;
-//     }
-// }
-
+        List<Boolean> result = new ArrayList<Boolean>(candies.length);
+        int max = 0;
+        for(int i: candies) {
+            if(i > max) max = i;
+        }
+        for(int i=0; i< candies.length; i++){
+            result.add(candies[i] + extracandies >= max);
+        }
+        return result;
