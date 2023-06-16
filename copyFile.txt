@@ -1,9 +1,0 @@
-        List<Boolean> result = new ArrayList<Boolean>(candies.length);
-        int max = 0;
-        for(int i: candies) {
-            if(i > max) max = i;
-        }
-        for(int i=0; i< candies.length; i++){
-            result.add(candies[i] + extracandies >= max);
-        }
-        return result;
